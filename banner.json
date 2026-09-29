@@ -1,0 +1,68 @@
+{
+  "eyebrow": "PICOKIT // LESSON 33",
+  "title": "PICOKIT // DATA LOGGER",
+  "subtitle": "BUFFERED READINGS + BATCHED FLUSH + AUTHENTICATED HEARTBEAT",
+  "accent": "#5047FF",
+  "dim": "#312C9E",
+  "white": "#DBDCFF",
+  "cyan": "#7FD8E0",
+  "bg": "#050411",
+  "bg_edge": "#010105",
+  "icon": "chip",
+  "panel_status": "COUNT 7  ·  MODE LIVE  ·  FLUSH ON",
+  "chips": [
+    {
+      "label": "COUNT",
+      "value": "7"
+    },
+    {
+      "label": "MODE",
+      "value": "live"
+    },
+    {
+      "label": "FLUSH",
+      "value": "batch"
+    },
+    {
+      "label": "RADIO",
+      "value": "-44 dBm"
+    }
+  ],
+  "terminal": [
+    "$ gateway listen /dev/cu.usbserial-A50285BI",
+    "[*] node 00033  seq 14  HEARTBEAT  AEAD ok",
+    "[*] anti-replay window ok  counter 14",
+    "[+] reading buffered  count 7",
+    "[+] button flush  batch of 7 sealed  ack sent"
+  ],
+  "categories": [
+    "LOG",
+    "BATCH",
+    "SECURE",
+    "LINK"
+  ],
+  "cards": [
+    {
+      "tag": "LG-01",
+      "label": "buffer",
+      "value": "7"
+    },
+    {
+      "tag": "LG-02",
+      "label": "flush",
+      "value": "batch"
+    },
+    {
+      "tag": "LG-03",
+      "label": "mode",
+      "value": "live"
+    }
+  ],
+  "footer": [
+    "1 NODE  ·  1 GATEWAY  ·  2 WAY LORA  ·  NO PLAINTEXT",
+    "PICOKIT SERIES  ·  SAMPLE  ·  BUFFER  ·  RADIO  ==[ LOG ]=="
+  ],
+  "repo": "picokit-33-data-logger",
+  "layout": "terminal",
+  "stat": "7"
+}
